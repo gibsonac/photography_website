@@ -1,0 +1,87 @@
+@{
+    ViewData["Title"] = "Landscape Images";
+}
+<div class="container-fluid" style="margin-top: 100px;">
+    <img class="rounded mx-auto d-block" src="~/images/WET'n WOW.png" alt="" style="width: 30vw; min-width: 200px;">
+<h2 class="text-center" style="margin-bottom: 5rem;">UNDERWATER  </h2>
+<div class="row rowChanges">
+    @{
+        int x = 0;
+        if(ViewBag.UnderwaterImages.Count == 0)
+        {
+            <p>whoops! There are no images!</p>
+        }
+        else{
+    @foreach(var image in ViewBag.UnderwaterImages)
+    {
+        if(x == 3)
+        {
+            break;
+        }
+        <div class="col col-md-4 text-center">
+            <a href="/image/@image.id">
+                <img class="img-fluid galleryImages" src="~/images/@image.location" alt="test">
+            </a>
+            @if(x == 1)
+            {
+                <a href="/underwater">
+                <button class="btn btn-dark" style="margin: 15px; padding: 11px; width: 200px;">SEE ALL</button></a>
+            }
+        </div>
+        x++;
+    }
+
+        }
+    }
+</div>
+<h2 class="text-center" style="margin-bottom: 5rem;">LANDSCAPE  </h2>
+<div class="row rowChanges">
+    @{
+        x = 0;
+    @foreach(var image in ViewBag.LandscapeImages)
+    {
+        if(x == 3)
+        {
+            break;
+        }
+        <div class="col col-md-4 text-center">
+            <a href="/image/@image.id">
+                <img class="img-fluid galleryImages" src="~/images/@image.location" alt="test">
+            </a>
+        @if(x == 1)
+        {
+            <a href="/landscape">
+            <button class="btn btn-dark" style="margin: 15px; padding: 11px; width: 200px;">SEE ALL</button></a>
+        }
+        </div>
+        x++;
+    }
+    }
+</div>
+<h2 class="text-center" style="margin-bottom: 5rem;">PORTRAIT  </h2>
+<div class="row rowChanges">
+    @{
+        x = 0;
+    @foreach(var image in ViewBag.PortraitImages)
+    {
+        if(x == 3)
+        {
+            break;
+        }
+        <div class="col col-md-4 text-center">
+            <a href="/image/@image.id">
+                <img class="img-fluid galleryImages" src="~/images/@image.location" alt="test">
+            </a>
+        @if(x == 1)
+            {
+                <a href="/portrait">
+                <button class="btn btn-dark" style="margin: 15px; padding: 11px; width: 200px;">SEE ALL</button></a>
+            }
+        </div>
+        x++;
+    }
+    }
+</div>
+
+</div>
+

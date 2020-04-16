@@ -1,0 +1,222 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+/* MY CUSTOM CSS STUFF */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border-color: black;
+} 
+
+.customNavbar {
+  /* border: none;
+  z-index: 100; */
+  transition: background-color 1s ease-in-out;
+  transition: box-shadow .5s ease-in-out
+
+}
+
+.navbar-brand {
+  color: black;
+}
+.nav-link {
+  color: black;
+}
+.nav-link:hover {
+  color: black;
+  /* text-shadow: 1px 1px 2px rgb(181, 181, 181); */
+  border-radius: 5px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.navbar-brand:hover{
+  color: black;
+  /* text-shadow: 1px 1px 2px rgb(181, 181, 181); */
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px #000000;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.homeBannerImage {
+  background-image: url( "/images/_2150750.jpg");
+  height: 1100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: .7;
+  /* transition: opacity .5s ease-in-out; */
+}
+.homeBannerImage::after{
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent 0%, white 100%);
+  margin-top: 970px;
+  height: 130px;
+  width: 100%;
+  content: '';
+}
+.centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px; /* margin is -0.5 * dimension */
+  margin-top: -850px;
+  /* background-color: white;
+  opacity: .7;
+  border-radius: 10px; */
+}
+
+
+.instagram {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  margin: 10px;  
+  padding: 3px;  
+  margin-right: 1rem;
+}
+.navbar {
+  padding: .5rem 2rem !Important;
+}
+/* for other page */
+.homeImages {
+  width: 25vw;
+  margin: 25px;
+  border: 3px solid black;
+}
+.row {
+  margin-bottom: 200px;
+  min-height: 300px;
+}
+.rowChanges {
+  margin-bottom: 100px;
+}
+.col h4 {
+  margin-bottom: 20px;
+}
+.col .card img {
+  opacity: 1;
+  transition: .5s ease;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card {
+  transition: all .2s ease-in-out;
+  border: none !important;
+}
+.card:hover .img-fluid{
+  transform: scale(1.1);
+  opacity: .3;
+}
+.card:hover .middle{
+  opacity: 1;
+}
+.text {
+  background-color: rgb(124, 124, 124);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+  height: 200px;
+  background-image:
+  linear-gradient(
+    white, grey
+  );
+}
+footer .container {
+  padding: 50px;
+  padding-bottom: 25px;
+  color: white;
+}
+footer .container .text-center {
+  margin-top: 100px;
+}
+/* gallery pages */
+.galleryImages {
+  transition: all .3s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* margin-top: 10px;
+  margin-left: 2px; */
+}
+.galleryImages:hover {
+  /* margin-top: 0px;
+  margin-left: 0px; */
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

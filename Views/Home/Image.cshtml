@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Photo of @ViewBag.Image.id";
+}
+<div class="container" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col col-md-4">
+            <p>pricing, options, sizes, etc</p>
+        </div>
+        <div class="col col-md-8">
+            <img class = "mx-auto d-block" src="~/images/@ViewBag.Image.location" alt="" style="width: 50vw;">
+
+        </div>
+    </div>
+
+</div>
+

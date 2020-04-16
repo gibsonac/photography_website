@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Landscape Images";
+}
+<div class="container-fluid" style="margin-top: 150px;">
+    <h2 class="text-center" style="margin-bottom: 5rem;">LANDSCAPES  </h2>
+    
+        @if(ViewBag.Images.Count == 0)
+        {
+            <p class="text-center" style="color: red; min-height: 600px;">whoops! There are no images! for some reason</p>
+        }
+        else{
+        <div class="row align-items-center">
+            @{var num =0;}
+    @foreach(var image in ViewBag.Images)
+    {
+        <div class="col-xs-12 col-md-4" style="padding-top:30px;padding-bottom:30px;">
+            <a href="/image/@image.id">
+                <img class="img-fluid galleryImages" src="~/images/@image.location" alt="test">
+            </a>
+    </div>
+        num++;
+    }
+</div>
+        }
+
+</div>
+
